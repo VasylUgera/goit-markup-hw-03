@@ -7,42 +7,48 @@
     <title>Головна</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" >
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" >
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-          integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-          crossorigin="anonymous" 
-          referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/styles.css" >
-  </head> 
-  
+  </head>
+
   <body>
-    <header class="page-header">
-      <nav>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <a href="#" lang="en" class="logo"
+            >Web<span class="logo-studio">Studio</span></a
+          >
+          <ul class="header-nav list">
+            <li><a class="link current" href="#">Студія</a></li>
+            <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
 
-      <a href="#" lang="en" class="logo">Web<span class="logo-studio">Studio</span></a>
-      <ul class="site-nav list">
-        <li><a class="link current" href="#">Студія</a></li>
-        <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
-        <li><a class="link" href="#">Контакти</a></li>
-      </ul>
-      </nav>       
-      
-      <ul class="auth-nav list">
-        <li><a class="link" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
-        <li><a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
-
+        <ul class="auth-nav list">
+          <li>
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <!-- Герой   -->
     <main>
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <div class="container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button">Замовити послугу</button>
+        </div>        
       </section>
-      
-      <!-- Тези для бізнесу -->     
-      
+
+      <!-- Тези для бізнесу -->
+
       <section class="section">
         <h2 class="section-title">тези для бізнесу</h2>
         <ul class="list">
@@ -75,18 +81,14 @@
           </li>
         </ul>
       </section>
-      
+
       <!-- Чим ми займаємось -->
       <section class="section">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="list">
           <li>
-            <img
-              src="./images/programer.jpg"
-              alt="Програмування"
-              width="370"
-              height="294"
-            >
+            <img src="./images/programer.jpg" alt="Програмування" width="370"
+              height="294" >
           </li>
           <li>
             <img
@@ -153,14 +155,20 @@
         </ul>
       </section>
     </main>
-    <!--   FOOTER   --> 
+    <!--   FOOTER   -->
     <footer class="footer">
       <a href="#" class="logo">Web<span class="logo-footer">Studio</span></a>
       <address>
         <ul class="footer-link list">
           <li class="item">м. Київ, пр-т Лесі Українки, 26</li>
-          <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li>
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>

@@ -15,6 +15,9 @@ p {
     margin: 0;
 }
 
+img {
+    display: block;
+}
 
 body{    
     font-family: 'Roboto', sans-serif;
@@ -35,22 +38,39 @@ body{
 }
 /*ul {
     list-style: none;
-    
+        
 }*/
-.container{
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+section {
+    display: block;
 }
+.container {     
+    width: 1170px;
+    margin: 0 auto;
+    outline: 2px solid red;    
+}
+
+   
 
 
 /*-------------header-nav--------------*/
-.header{
+
+/*.header-conteiner { 
+    display: flex;
+    align-items: center;
+}*/
+
+
+.header {
+    display: block;
     padding-top: 24px;
     padding-bottom: 25px;
 }
 
+
+/*.header{
+    display: flex;
+    align-items: center;
+}*/
 
 .logo {
     font-family: 'Raleway';
@@ -60,7 +80,9 @@ body{
     line-height: 1.1923;
     letter-spacing: 0.03em;
     color: var(--accent-color);
-    text-decoration: none;     
+    text-decoration: none;
+    margin-right: 93px;
+    width: 145px;     
 }
 
 .logo-studio {
@@ -72,6 +94,20 @@ body{
     letter-spacing: 0.03em;
     color: #000000;
 }    
+.header-nav{
+    margin-right: 344px;
+    width: 281px;
+    justify-content:space-between;
+}
+
+
+.header-nav,
+.auth-nav,
+.container {
+    display: flex;
+    align-items: center;
+}
+
 
 .header-nav a,
 .auth-nav a,
@@ -101,6 +137,7 @@ body{
 }
 
 .auth-nav .link {
+    margin-right: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
@@ -156,6 +193,7 @@ body{
 /*--------------Hero-------------*/
 .hero{
     background: #2F303A;
+    text-align: center;
     
 }
 
@@ -165,11 +203,10 @@ body{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3636;
-    /* or 136% */
-    text-align:  start;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 30px;
 
 }
 
@@ -203,22 +240,25 @@ body{
 
 
 
-.hero .button {
+ .button-hero {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8750;   
-    align-items: center;    
+    align-items: center;
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
     color: var(--primary--white-color); 
-    cursor: pointer ;   
+    cursor: pointer ;
+    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
+    border-radius: 4px;
+    padding: 10px 32px;  
 }
 
 
-.hero .button:hover,
-.hero .button:focus {
+.button-hero:hover,
+.button-hero:focus {
     background-color: var(--button-active-color);
 }
 

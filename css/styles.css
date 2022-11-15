@@ -45,8 +45,7 @@ section {
 }
 .container {     
     width: 1170px;
-    margin: 0 auto;
-    outline: 2px solid red;    
+    margin: 0 auto;   
 }
 
    
@@ -108,6 +107,9 @@ section {
     align-items: center;
 }
 
+.auth-nav .link-tel{
+    min-width: 122px;
+    }
 
 .header-nav a,
 .auth-nav a,

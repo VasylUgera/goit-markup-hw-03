@@ -34,7 +34,7 @@ body{
 .list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0;header
 }
 /*ul {
     list-style: none;
@@ -47,7 +47,8 @@ section {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;   
+    margin: 0 auto;
+    outline: 2px solid red;  
 }
 
    
@@ -109,9 +110,9 @@ section {
     align-items: center;
 }
 
-.auth-nav .link-tel{
-    min-width: 122px;
-    }
+/*.auth-nav .link-tel{
+    width: 122px;
+    }*/
 
 .header-nav a,
 .auth-nav a,
@@ -129,12 +130,11 @@ section {
 }
 
 .header-nav .link:hover,
-.header-nav .link:focus {
-    color: var(--accent-color);
-}
+.header-nav .link:focus,
 .header-nav .link.current {
     color: var(--accent-color);
 }
+
 
 .header-nav .link:active {
     color: #000000;
@@ -157,7 +157,7 @@ section {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em;    
     color: var(--primary-text-color);
 }
 .auth-nav .link-tel:hover ,
@@ -199,7 +199,7 @@ section {
     background: #2F303A;
     text-align: center;
     height: 600px;
-    padding: 200px;        
+    padding-top: 200px;              
 }
 
 

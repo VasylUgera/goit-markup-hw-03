@@ -44,7 +44,9 @@ section {
     display: block;
 }
 .container {     
-    width: 1170px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;   
 }
 
@@ -102,7 +104,7 @@ section {
 
 .header-nav,
 .auth-nav,
-.container {
+.header-container {
     display: flex;
     align-items: center;
 }
@@ -196,20 +198,22 @@ section {
 .hero{
     background: #2F303A;
     text-align: center;
-    
+    height: 600px;
+    padding: 200px;        
 }
 
 
 
 .hero-title{
+    
+    width: 693px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3636;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 30px;
-
+    margin: 0px auto 30px;
 }
 
 
@@ -255,6 +259,7 @@ section {
     cursor: pointer ;
     /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
     border-radius: 4px;
+    min-block-size: 50p 216px;
     padding: 10px 32px;  
 }
 
@@ -313,8 +318,8 @@ section {
     color: var(--primary-text-color);
 }
 
-/*---------------Тези для бізнесу---------------*/
-.feature-list .title {
+/*---------------Особливості---------------*/
+/*.feature-list .title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1428px;
@@ -322,7 +327,11 @@ section {
     text-transform: uppercase;
     color: var(--title-text-color);
 }
-
+*/
+.container-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /*--------------Чим ми займаємось--------------*/
 
 

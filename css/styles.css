@@ -57,24 +57,21 @@ section {
 
 /*-------------header-nav--------------*/
 
-/*.header-conteiner { 
+.header {
     display: flex;
     align-items: center;
-}*/
-
-
-.header {
-    display: block;
+    margin:0 auto;
     padding-top: 24px;
     padding-bottom: 25px;
 }
 
 
-
-.header{
+.header-container { 
     display: flex;
     align-items: center;
 }
+
+
 
 .logo {
     font-family: 'Raleway';
@@ -102,7 +99,9 @@ section {
 .header-nav{    
     width: 281px;
     justify-content:space-between;
-    margin-right: 334px;
+}
+.nav{
+    margin-right: auto;
 }
 
 .header-nav,
@@ -128,7 +127,7 @@ section {
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.02em;
-    color: var(--title-text-color);
+    color: var(--title-text-color);    
 }
 
 .header-nav .link:hover,

@@ -35,6 +35,7 @@ body{
     list-style: none;
     margin: 0;
     padding: 0;header
+    padding: 0;
 }
 /*ul {
     list-style: none;
@@ -69,10 +70,11 @@ section {
 }
 
 
-/*.header{
+
+.header{
     display: flex;
     align-items: center;
-}*/
+}
 
 .logo {
     font-family: 'Raleway';
@@ -95,13 +97,13 @@ section {
     line-height: 1.1923;
     letter-spacing: 0.03em;
     color: #000000;
-}    
-.header-nav{
-    margin-right: 344px;
+}
+   
+.header-nav{    
     width: 281px;
     justify-content:space-between;
+    margin-right: 334px;
 }
-
 
 .header-nav,
 .auth-nav,
@@ -141,7 +143,6 @@ section {
 }
 
 .auth-nav .link {
-    margin-right: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
@@ -154,10 +155,12 @@ section {
     color: var(--accent-color);
 }
 .auth-nav .link-tel {
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
-    letter-spacing: 0.02em;    
+    letter-spacing: 0.02em; 
+    margin-left: 50px;      
     color: var(--primary-text-color);
 }
 .auth-nav .link-tel:hover ,
@@ -176,14 +179,7 @@ section {
     color: var(--accent-color);
     text-decoration: none;
 }
-.header-nav-tel{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1428px;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-    text-decoration: none;
-}*/
+
 /*-----------------------Header--------------------*/
 
 

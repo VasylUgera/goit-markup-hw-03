@@ -71,6 +71,8 @@ body{
 
 
 .logo {
+    display: inline-block;
+    min-width: 145px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -80,7 +82,7 @@ body{
     color: var(--accent-color);
     text-decoration: none;
     margin-right: 93px;
-    width: 145px;     
+        
 }
 
 .logo-studio {
@@ -93,13 +95,13 @@ body{
     color: #000000;
 }
    
-.header-nav{    
+.header-nav{ 
+    display: inline-block;   
     width: 281px;
     justify-content:space-between;
+    margin-right: 344px;
 }
-.nav{
-    margin-right: auto;
-}
+
 
 .header-nav,
 .auth-nav,
@@ -108,10 +110,7 @@ body{
     align-items: center;
 }
 
-.link-tel{
-    max-width: 122px;  
-    white-space: normal;  
-}
+
 
 .header-nav a,
 .auth-nav a,
@@ -151,7 +150,12 @@ body{
 .auth-nav .link:focus {
     color: var(--accent-color);
 }
+
+
+
 .link-tel {
+    display: inline-block;
+    min-width: 122px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -195,15 +199,17 @@ body{
 
 
 /*--------------Hero-------------*/
-.hero{
-    
+.hero {    
     background: #2F303A;
-    text-align: center;
-    height: 600px;
-    padding-top: 200px;              
+    text-align: center;    
+    padding-top: 200px;
+    padding-bottom: 200px;              
 }
 
+.hero-container{
+    align-items: center;
 
+}
 
 .hero-title{    
     width: 693px;
@@ -212,8 +218,10 @@ body{
     line-height: 1.3636;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
-    margin: 0px auto 30px;
+    align-items: center; 
+    color: #FFFFFF;    
+    margin:0 auto;
+    margin-bottom:  30px;
 }
 
 
@@ -313,19 +321,14 @@ body{
 }
 */
 .section {
-    display: block;
-    background: #F5F5F5;
+    padding: 94px 0;
 }
 
-.container-section {    
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
-.list-section{
+
+.list-section {
     display: flex;
     align-items: start;
-    border-box: 270px;
     gap: 30px;
 }
 
@@ -340,9 +343,8 @@ body{
 
 
 /*--------------Чим ми займаємось--------------*/
-.profile{
-    display: block;
-   background: #f5f5f5;   
+.profile {
+    padding-top: 0;   
 }
 
 
@@ -372,7 +374,6 @@ body{
 }
 /*---------------Наша команда---------------*/
 .teams {
-    display: block;
     background: #F5F4FA;
 }
 
@@ -383,15 +384,13 @@ body{
     text-align: center;
     letter-spacing: 0.03em;   
     color: var(--title-text-color);
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 30px;   
 }
 
 .container-teams {
     display: flex;
     align-items: start;
     gap: 30px;
-    padding-bottom: 94px;
 }
 .link-teams {
     background: #FFFFFF;    
@@ -408,9 +407,11 @@ body{
     line-height: 1,1875;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-text-color);
-    padding-top: 30px;
+    color: var(--title-text-color);    
     padding-bottom: 10px;
+}
+.teams-tetle{
+    padding: 30px 0;
 }
 
 .text-teams {
@@ -432,6 +433,8 @@ body{
 
 .footer {
     background-color:#2F303A;
+    padding: 60px 0;
+    
 }
 
 .footer-container {
@@ -439,9 +442,19 @@ body{
     flex-direction: column;
 }
 
-
+.container-logo{    
+    display: inline-block;
+    width: 145px;
+    margin-top: 0;
+    margin-bottom: 20px;   
+}
+.container-adres-footer{
+    display: border-blok;
+    width: 231px;
+    margin-bottom: 60px;
+}
 .logofooter {
-    display: block;
+    display: inline-block;
     width: 145px;
     font-family: 'Raleway';
     font-style: normal;
@@ -450,9 +463,7 @@ body{
     line-height: 1.1923;
     letter-spacing: 0.03em;
     color: var(--accent-color);
-    text-decoration: none;
-    padding-top: 60px;
-    padding-bottom: 20px;        
+    text-decoration: none;    
 }
 
 
@@ -468,16 +479,28 @@ body{
 
 }
 
-.footer-link .item {
+.item-footer {
+    display: inline-block;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;    
     line-height: 1.7142;
     letter-spacing: 0.03em;
     color: var(--primary--white-color);
+    margin-bottom: 9px;
 }
 
-.footer-link .link ,
+.footer-link .link {
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7142;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
+}
+
 .footer-link .link-tel {
     font-weight: 400;
     font-style: normal;
@@ -487,13 +510,13 @@ body{
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-link .item:hover,
+.item-footer:hover,
 .footer-link .link:hover,
 .footer-link .link-tel:hover {
     color: var(--button-active-color);
 }
 
-.footer-link .item:focus,
+.item-footer:focus,
 .footer-link .link:focus,
 .footer-link .link-tel:focus {
     color: var(--button-active-color);

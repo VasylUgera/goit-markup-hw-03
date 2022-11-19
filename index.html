@@ -35,14 +35,14 @@
     </header> 
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button-hero">Замовити послугу</button>
         </div>              
       </section>
      
       <section class="section">
-        <div class="container container-section">
+        <div class="container">
         <h2 style="visibility: hidden; font-size: 0px">Особливості</h2>       
           <ul class="list-section list">
             <li class="item-section">
@@ -78,7 +78,7 @@
       </section>
 
       <!-- Чим ми займаємось   -->
-      <section class="profile">        
+      <section class="section profile">        
         <div class="container">
           <h2 class="section-profile">Чим ми займаємося</h2> 
           <ul class="container-teams list">
@@ -103,7 +103,7 @@
         
       </section>
       <!-- Наша команда  -->     
-      <section class="teams">
+      <section class="section teams">
         <div class="container">
           <h2 class="teams-title">Наша команда</h2>          
             <ul class="container-teams list">
@@ -112,40 +112,45 @@
                   src="./images/demyanenko.jpg"
                   alt="Ігор Дем'яненко"
                   width="270"
-                  height="260"
-                >
-                <h3 class="section-teams">Ігор Дем'яненко</h3>
-                <p class="text-teams" lang="en">Produkt Designer</p>
+                  height="260">
+                <div class="teams-tetle">
+                  <h3 class="section-teams">Ігор Дем'яненко</h3>
+                  <p class="text-teams" lang="en">Produkt Designer</p>
+                </div>
+               
               </li>
               <li class="link-teams">
                 <img
                   src="./images/repina.jpg"
                   alt="Ольга Рєпіна"
                   width="270"
-                  height="260"
-                >
-                <h3 class="section-teams">Ольга Рєпіна</h3>
-                <p class="text-teams" lang="en">Frontend Developer</p>
+                  height="260">
+                  <div class="teams-tetle">
+                    <h3 class="section-teams">Ольга Рєпіна</h3>
+                    <p class="text-teams" lang="en">Frontend Developer</p>
+                  </div>                                 
               </li>
               <li class="link-teams">
                 <img
                   src="./images/tarasov.jpg"
                   alt="Микола Тарасов"
                   width="270"
-                  height="260"
-                >
-                <h3 class="section-teams">Микола Тарасов</h3>
-                <p class="text-teams" lang="en">Marketing</p>
+                  height="260">
+                <div class="teams-tetle">
+                  <h3 class="section-teams">Микола Тарасов</h3>
+                  <p class="text-teams" lang="en">Marketing</p> 
+                </div>
               </li>
               <li class="link-teams">
                 <img
                   src="./images/yermakov.jpg"
                   alt="Михайло Єрмаков"
                   width="270"
-                  height="260"
-                >
-                <h3 class="section-teams">Михайло Єрмаков</h3>
-                <p class="text-teams" lang="en">UI Designer</p>
+                  height="260"                >
+                <div class="teams-tetle">
+                  <h3 class="section-teams">Михайло Єрмаков</h3>
+                  <p class="text-teams" lang="en">UI Designer</p>                  
+                </div>                
               </li>
             </ul>       
         </div>        
@@ -154,25 +159,21 @@
     <!--   FOOTER   -->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-container">
+        <div class="container-logo">
           <a href="#" class="logofooter">Web<span class="logo-footer">Studio</span></a>
         </div>
-        <address>
+        <address class="container-adres-footer">
         <ul class="footer-link list">
-          <li class="item">м. Київ, пр-т Лесі Українки, 26</li>
+          <li class="item-footer">м. Київ, пр-т Лесі Українки, 26</li>
           <li>
-            <a class="link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li>
             <a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </address>
-
-      </div>
-      
+        </address>
+      </div>      
     </footer>
   </body>
 </html>

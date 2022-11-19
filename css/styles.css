@@ -40,9 +40,7 @@ body{
     list-style: none;
         
 }*/
-section {
-    display: block;
-}
+
 .container {     
     width: 1200px;
     padding-left: 15px;
@@ -286,7 +284,7 @@ section {
     color: var(--title-text-color);
 }
 
-.caption {
+.title-section {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1428;
@@ -296,7 +294,7 @@ section {
     color: var(--title-text-color);
 }
 
-.text-caption {
+.text-section {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7142;   
@@ -314,6 +312,11 @@ section {
     color: var(--title-text-color);
 }
 */
+.section {
+    display: block;
+    background: #F5F5F5;
+}
+
 .container-section {    
     padding-top: 94px;
     padding-bottom: 94px;
@@ -321,58 +324,148 @@ section {
 
 .list-section{
     display: flex;
-    align-items: center;
+    align-items: start;
     border-box: 270px;
+    gap: 30px;
 }
 
 
 .item-section {
     display: block;
-   
+    flex-basis: calc((100% - 90px) / 4);
+    background: #f5f5f5;   
 }
 
 
 
 
 /*--------------Чим ми займаємось--------------*/
-
-
-
-/*---------------Наша команда---------------*/
-
-.section-team {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.1875;
-    text-align: start;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
+.profile{
+    display: block;
+   background: #f5f5f5;   
 }
 
-.text-team {
+
+.section-profile {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);    
+    margin-bottom: 50px ;
+}
+
+ 
+
+.container-profile {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    padding-bottom: 94px;
+}
+
+
+.link-portfolio {
+    display: block;
+    flex-basis: calc((100% - 60px) / 3);
+}
+/*---------------Наша команда---------------*/
+.teams {
+    display: block;
+    background: #F5F4FA;
+}
+
+.teams-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;   
+    color: var(--title-text-color);
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.container-teams {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    padding-bottom: 94px;
+}
+.link-teams {
+    background: #FFFFFF;    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;    
+    display: block;
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.section-teams {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,1875;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.text-teams {
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.1875;
-    text-align: start;
+    text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
+
+
+
+
+
+
 /*---------------Footer-------------------*/
 
 .footer {
     background-color:#2F303A;
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
 
 
-.logo-footer{
+.logofooter {
+    display: block;
+    width: 145px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.1923;
     letter-spacing: 0.03em;
-    color: var(--primary--white-color);    
+    color: var(--accent-color);
+    text-decoration: none;
+    padding-top: 60px;
+    padding-bottom: 20px;        
+}
+
+
+.logo-footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    letter-spacing: 0.03em;
+    color: var(--primary--white-color);
+    margin-top: 60px;
+
 }
 
 .footer-link .item {

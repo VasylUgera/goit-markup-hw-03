@@ -46,7 +46,7 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;  
+    /*outline: 2px solid red; */ 
 }
 
    
@@ -363,7 +363,7 @@ body{
 }
 
 
-.link-portfolio {
+.link-profile {
     display: block;
     flex-basis: calc((100% - 60px) / 3);
 }
@@ -438,7 +438,7 @@ body{
 }
 
 .container-logo{    
-    display: inline-block;
+    display: block;
     width: 145px;
     margin-top: 0;
     margin-bottom: 20px;   
@@ -553,20 +553,13 @@ body{
 }
 
 
-.item-portfolio {
-    margin: 0 auto;
-}
+
 
 
 .portfolio-filters { 
     display: flex;     
     justify-content: center;
     gap: 8px;    
-}
-.items-portfolio {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
 }
 
 
@@ -583,12 +576,35 @@ body{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--title-text-color)
+    color: var(--title-text-color);
+    margin-bottom: 4px;
 }
+
+
 
 .text-portfolio {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+.items-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.link-portfolio{
+    background: var(--primary--white-color);
+    width: calc(100%-60px) / 3 ;
+    /*border: 1px solid #EEEEEE;*/  
+
+}
+
+.tetle-portfolio{
+    display: block;
+    padding-top: 20px;
+    padding-left: 35px;
+    
 }

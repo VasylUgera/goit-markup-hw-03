@@ -60,12 +60,13 @@ body{
     margin:0 auto;
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 
 
 .logo {
-    display: inline-block;
+    display: block;
     min-width: 145px;
     font-family: 'Raleway';
     font-style: normal;
@@ -148,7 +149,7 @@ body{
 
 
 .link-tel {
-    display: inline-block;
+    display: block;
     min-width: 122px;
     font-style: normal;
     font-weight: 500;

@@ -66,8 +66,7 @@ body{
 
 
 .logo {
-    display: block;
-    min-width: 145px;
+    display: block;    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -89,20 +88,30 @@ body{
     letter-spacing: 0.03em;
     color: #000000;
 }
-   
-.header-nav{ 
-    display: inline-block;   
-    width: 281px;
-    justify-content:space-between;
-    margin-right: 344px;
+
+.nav{    
+    /*width: 100%;*/
+    margin-right: auto;
+
 }
 
+.header-nav{ 
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 50px;
+}
 
-.header-nav,
-.auth-nav,
 .header-container {
     display: flex;
     align-items: center;
+    justify-content:space-between;
+}
+
+.auth-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;    
 }
 
 
@@ -155,7 +164,7 @@ body{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
-    letter-spacing: 0.02em; 
+    letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
 .auth-nav li{
@@ -295,6 +304,7 @@ body{
     text-transform: uppercase; 
     justify-content: start;                                         
     color: var(--title-text-color);
+    margin-bottom: 10px;
 }
 
 .text-section {
@@ -331,8 +341,7 @@ body{
 
 .item-section {
     display: block;
-    flex-basis: calc((100% - 90px) / 4);
-    background: #f5f5f5;   
+    flex-basis: calc((100% - 90px) / 4);  
 }
 
 
@@ -404,7 +413,7 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);    
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 .teams-tetle{
     padding: 30px 0;
@@ -433,22 +442,21 @@ body{
     
 }
 
-.footer-container {
-    display: flex;
-    flex-direction: column;
-}
+/*.footer-container {
+    
+}*/
 
 .container-logo{    
     display: block;
-    width: 145px;
     margin-top: 0;
     margin-bottom: 20px;   
 }
-.container-adres-footer{
-    display: border-blok;
-    width: 231px;
-    margin-bottom: 60px;
-}
+
+/*
+.container-adres-footer{    
+   
+}*/
+
 .logofooter {
     display: inline-block;
     width: 145px;
@@ -482,9 +490,17 @@ body{
     font-size: 14px;    
     line-height: 1.7142;
     letter-spacing: 0.03em;
-    color: var(--primary--white-color);
+    color: var(--primary--white-color);    
+}
+
+.footer-link li{
     margin-bottom: 9px;
 }
+
+.footer-link li:last-child{
+    margin-bottom: 0;
+}
+
 
 .footer-link .link {
     display: inline-block;
@@ -494,8 +510,7 @@ body{
     line-height: 1.7142;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 9px;
-}
+}    
 
 .footer-link .link-tel {
     font-weight: 400;

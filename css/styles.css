@@ -493,13 +493,10 @@ body{
     color: var(--primary--white-color);    
 }
 
-.footer-link li{
+.footer-link li:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.footer-link li:last-child{
-    margin-bottom: 0;
-}
 
 
 .footer-link .link {
